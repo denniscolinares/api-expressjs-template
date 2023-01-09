@@ -1,0 +1,15 @@
+{
+    "testResultsProcessor": "jest-stare",
+    "reporters": ["default"],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "api/**/*.{js,jsx}",
+      "!api/policies/*.{js,jsx}",
+      "!api/response/*.{js,jsx}"
+    ],
+    "coverageDirectory": "reports/latest/coverage",
+    "coverageReporters": ["json", "html"],
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/api/$1"
+    }
+  }
